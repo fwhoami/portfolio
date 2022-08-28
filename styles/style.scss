@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap");
-
-:root {
-  --color-primary: #0D1117;
-  --color-acent: #ff681c;
-  --color-white: white;
-  --transition: all 300ms ease;
-}
-
+@import "variables";
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +13,7 @@ button {
 }
 
 button:hover {
-  color: var(--color-acent);
+  color: $colorAcent;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -28,7 +21,7 @@ button:hover {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: var(--color-primary);
+  color: $colorPrimary;
   font-weight: 500;
 }
 
@@ -42,13 +35,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--color-primary);
-  transition: var(--transition);
+  color: $colorPrimary;
+  transition: $transition;
 }
 
 a:hover,
 footer a:hover {
-  color: var(--color-acent);
+  color: $colorAcent;
 }
 
 h1 {
@@ -79,8 +72,8 @@ header {
   position: fixed;
   height: 165px;
   padding: 46px 0;
-  background-color: var(--color-white);
-  transition: var(--transition);
+  background-color: $colorMainBody;
+  transition: $transition;
 }
 
 .close-btn,
@@ -132,7 +125,7 @@ header .nav-link.active {
 
 .button {
   display: flex;
-  border: 1px solid var(--color-primary);
+  border: 1px solid $colorPrimary;
   border-radius: 100px;
   padding: 24px 0 22px;
   width: 255px;
@@ -140,7 +133,7 @@ header .nav-link.active {
   line-height: 1.4;
   align-items: center;
   justify-content: center;
-  transition: var(--transition);
+  transition: $transition;
 }
 
 .button img {
@@ -149,8 +142,8 @@ header .nav-link.active {
 }
 
 .button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: $colorPrimary;
+  color: $colorMainBody;
 }
 
 .button:hover img {
@@ -166,7 +159,7 @@ h2::after {
   content: "";
   display: block;
   padding-top: 28px;
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid $colorPrimary;
   width: 255px;
 }
 
@@ -198,9 +191,10 @@ h3 {
   font-weight: 800;
 }
 
-.work-img {
-  width: 700px;
+.work-img img{
+  width: 500px;
   margin-left: 50px;
+  border-radius: 5%;
 }
 
 .work .icons {
@@ -210,29 +204,29 @@ h3 {
 
 .work a {
   font-size: 2rem;
-  transition: var(--transition);
+  transition: $transition;
 }
 
 .work a:hover {
-  color: var(--color-acent);
+  color: $colorAcent;
 }
 
 .green-bg {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: $colorPrimary;
+  color: $colorMainBody;
 }
 
 .green-bg a {
-  color: var(--color-white);
+  color: $colorMainBody;
 }
 
 .about-content {
-  padding: 15px 0 0;
+  padding: 0px 0 0;
   gap: 130px;
 }
 
 .about-text {
-  padding-top: 137px;
+  padding-top: 50px;
   width: 445px;
   display: flex;
   flex-direction: column;
@@ -241,9 +235,10 @@ h3 {
   flex-shrink: 0;
 }
 
-.about-img {
+#main-about-image {
   width: 400px;
-  border-radius: 50%;
+  border-radius: 5%;
+
 }
 
 .contact-content {
@@ -259,7 +254,7 @@ h3 {
 }
 
 #contact a:hover {
-  color: var(--color-acent);
+  color: $colorAcent;
 }
 
 .contact-content .email {

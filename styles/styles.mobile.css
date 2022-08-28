@@ -4,134 +4,129 @@
     padding: 0 15px;
     margin: 0 auto;
   }
-
   header {
     height: 80px;
     padding: 0;
   }
-
   #header.active {
     height: 80px;
     padding: 0;
   }
-
   .menu-btn {
     display: block;
     font-size: 1rem;
-    transition: var(--transition);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
-
   .menu-btn:hover {
-    color: var(--color-acent);
+    color: #ff681c;
   }
-
   #main {
     padding-top: 90px;
     height: 400px;
   }
-
   .logo {
     font-size: 1rem;
   }
-
   .main-img {
     display: none;
   }
-
   .work {
     padding: 30px 0;
   }
-
   .work .flex.reverse {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-
   .work .flex {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .work .flex > * + * {
     margin-left: 0;
     margin-top: var(--work-gap);
   }
-
   .fw h2 {
     font-size: 1.4rem;
   }
-
   h2::after {
     width: 200px;
   }
-
   h3 {
     font-size: 1.2rem;
     padding: 0;
   }
-
   .work-text {
-    align-self: start;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     width: 100%;
   }
-
   .work-text h4 {
     font-size: 1rem;
   }
-
   .work-img {
     width: 80%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-
   .work a {
     font-size: 1.25rem;
   }
-
   #about .about-texts {
     padding: 0;
   }
-
   #contact .contact-content {
-    flex-direction: column;
-    align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     gap: 30px;
   }
-
   #contact .contact-content .email {
     width: 100%;
     font-size: 1rem;
   }
-
   footer .container.flex {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 30px;
   }
-
   .footer-right .nav-links,
   .footer-right .contacts div:not(:last-child) {
     display: none;
   }
-
   footer .footer-right {
     width: 100%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-
   footer .contacts {
     margin: 0 auto;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   footer .contacts p:last-child {
     margin-top: 8px;
   }
-
   header .container {
     position: relative;
   }
-
   nav {
     display: block;
-    background: var(--color-primary);
+    background: #0D1117;
     opacity: 0.98;
     position: fixed;
     top: 0;
@@ -139,38 +134,39 @@
     width: 80vw;
     height: 100vh;
     z-index: 2;
-    transition: var(--transition);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
-
   nav ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 1rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 50%;
   }
-
   nav ul li a {
-    color: var(--color-white);
+    color: white;
   }
-
   nav ul li .nav-link:hover {
-    color: var(--color-acent);
+    color: #ff681c;
   }
-
   nav .close-btn {
     position: absolute;
     display: block;
     top: 2rem;
     right: 2rem;
     font-size: 1rem;
-    color: var(--color-white);
-    transition: var(--transition);
+    color: white;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
-
   nav .close-btn:hover {
-    color: var(--color-acent);
+    color: #ff681c;
   }
-
   nav.active {
     right: 0;
   }
@@ -183,12 +179,11 @@
   h1 {
     padding: 30px 0;
   }
-
   #works {
     padding-top: 60px;
   }
-
   nav.active {
     right: 0;
   }
 }
+/*# sourceMappingURL=styles.mobile.css.map */
