@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap");
 
 :root {
-  --color-primary: white;
+  --color-primary: #0D1117;
   --color-acent: #ff681c;
-  --color-white: #121212;
+  --color-white: white;
   --transition: all 300ms ease;
 }
 
@@ -158,11 +158,6 @@ header .nav-link.active {
     brightness(105%) contrast(108%);
 }
 
-.main-img {
-  padding-top: 51px;
-  width: 540px;
-}
-
 .section-header {
   height: 70px;
 }
@@ -204,7 +199,7 @@ h3 {
 }
 
 .work-img {
-  width: 600px;
+  width: 700px;
   margin-left: 50px;
 }
 
@@ -247,7 +242,7 @@ h3 {
 }
 
 .about-img {
-  width: 614px;
+  width: 400px;
   border-radius: 50%;
 }
 
